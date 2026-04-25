@@ -1,4 +1,4 @@
-baseURL = "https://github.com/yota5555yota-lab/materials-strength-site/"
+baseURL = "https://yota5555yota-lab.github.io/materials-strength-site/"
 languageCode = 'ja'
 title = 'My New Hugo Project'
 theme = "PaperMod"
