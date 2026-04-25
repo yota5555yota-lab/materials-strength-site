@@ -1,0 +1,58 @@
+faculty:
+  - name: Ryosuke Komoda
+    role: Associate Professor
+    image: ""
+
+students:
+  M2:
+    - name: Reina Edayoshi
+      image: ""
+    - name: Aoto Ootska
+      image: ""
+    - name: Daichi Goto
+      image: ""
+    - name: Yuri Tabata
+      image: ""
+
+  M1:
+    - name: Toshiya Kamihoriuchi
+      image: ""
+    - name: Reishi Kudo
+      image: ""
+    - name: Yota Matsuo
+      image: "bg.png"
+    - name: Taichi Murakawa
+      image: ""
+
+  B4:
+    - name: Ryosuke Kikuchi
+      image: ""
+    - name: Ryosuke Kikuchi
+      image: ""
+    - name: Hikaru Sonoda
+      image: ""
+    - name: Shoei Takayama
+      image: ""
+    - name: Kazumaru Matsunaga
+      image: ""
+    - name: Natsumi Matsumoto
+      image: ""
+
+  B3:
+    - name: Student A
+      image: ""
+
+alumni:
+  "Graduated in 2026":
+    - name: Kodai Araki
+    - name: Takeshi Usui
+    - name: Amu Haneda
+    - name: Reina Matsuo
+    - name: Taito Uno
+    - name: Koki Taura
+
+  "Graduated in 2025":
+    - name: Naho Suga
+
+  "Graduated in 2024":
+    - name:

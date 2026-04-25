@@ -1,0 +1,49 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/images/b.png") center/cover;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+/* PaperModの背景を完全無効化 */
+body, body[data-theme="dark"], body[data-theme="light"] {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* コンテンツだけ前面に出す */
+main, header, footer, .page, .post {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.pub-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pub-text {
+  flex: 1;
+}
+
+.pub-img {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.pub-img img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}

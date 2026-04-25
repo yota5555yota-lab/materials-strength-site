@@ -1,0 +1,91 @@
+baseURL = "http://localhost:1313/"
+languageCode = 'ja'
+title = 'My New Hugo Project'
+theme = "PaperMod"
+
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+  [languages.ja]
+    languageName = "日本語"
+    weight = 1
+
+    [[languages.ja.menu.main]]
+    name = "ホーム"
+    url = "/"
+    weight = 1
+
+    [[languages.ja.menu.main]]
+    name = "研究内容"
+    url = "/research/"
+    weight = 2
+
+    [[languages.ja.menu.main]]
+    name = "メンバー"
+    url = "/members/"
+    weight = 3
+
+    [[languages.ja.menu.main]]
+    name = "研究実績"
+    url = "/publications/"
+    weight = 4
+
+    [[languages.ja.menu.main]]
+    name = "アクセス"
+    url = "/access/"
+    weight = 5
+
+    [[languages.ja.menu.main]]
+    name = "お問い合わせ"
+    url = "/contact/"
+    weight = 6
+
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+
+    [[languages.en.menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[languages.en.menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+
+    [[languages.en.menu.main]]
+    name = "Members"
+    url = "/members/"
+    weight = 3
+
+    [[languages.en.menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+
+    [[languages.en.menu.main]]
+    name = "Access"
+    url = "/access/"
+    weight = 5
+
+    [[languages.en.menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[params]
+  ShowPostMeta = false
+
+  [params.label]
+    text = "材料強度学研究室"
+    icon = "/images/logo.png"
+    iconHeight = 35
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

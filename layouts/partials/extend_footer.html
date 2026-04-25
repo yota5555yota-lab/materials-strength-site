@@ -1,0 +1,34 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  let index = 0;
+  const slides = document.querySelectorAll(".hero-slider img");
+
+  if (slides.length === 0) return;
+
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }, 4000);
+
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".accordion-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  });
+});
+</script>

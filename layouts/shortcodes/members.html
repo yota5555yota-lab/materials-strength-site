@@ -1,0 +1,92 @@
+{{ $data := site.Data.members }}
+{{ $titleFaculty := "教員" }}
+{{ $titleStudents := "学生" }}
+{{ $titleAlumni := "卒業生" }}
+
+{{ if eq .Site.Language.Lang "en" }}
+  {{ $data = site.Data.members_en }}
+  {{ $titleFaculty = "Faculty" }}
+  {{ $titleStudents = "Students" }}
+  {{ $titleAlumni = "Alumni" }}
+{{ end }}
+
+
+
+<h2>{{ $titleFaculty }}</h2>
+
+<div style="display:flex; flex-wrap:wrap;">
+  {{ range .Site.Data.members.faculty }}
+    <div style="width:200px; margin:20px; text-align:center;">
+      
+      <img src="/images/members/test.png" style="width:150px; height:150px; object-fit:cover;">
+
+      <p style="margin-top:10px; font-weight:bold;">{{ .name }}</p>
+      <p>{{ .role }}</p>
+
+    </div>
+  {{ end }}
+</div>
+
+<h2>{{ $titleStudents }}</h2>
+
+<h3>M2</h3>
+<div style="display:flex; flex-wrap:wrap;">
+  {{ range index .Site.Data.members.students "M2" }}
+    <div style="width:140px; margin:10px; text-align:center;">
+      
+      <div style="width:100px; height:100px; background-color:#4a90e2; margin:auto;"></div>
+      
+      <p>{{ .name }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<h3>M1</h3>
+<div style="display:flex; flex-wrap:wrap;">
+  {{ range index .Site.Data.members.students "M1" }}
+    <div style="width:140px; margin:10px; text-align:center;">
+      <div style="width:100px; height:100px; background-color:#4a90e2; margin:auto;"></div>
+      <p>{{ .name }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<h3>B4</h3>
+<div style="display:flex; flex-wrap:wrap;">
+  {{ range index .Site.Data.members.students "B4" }}
+    <div style="width:140px; margin:10px; text-align:center;">
+      <div style="width:100px; height:100px; background-color:#4a90e2; margin:auto;"></div>
+      <p>{{ .name }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<h3>B3</h3>
+<div style="display:flex; flex-wrap:wrap;">
+  {{ range index .Site.Data.members.students "B3" }}
+    <div style="width:140px; margin:10px; text-align:center;">
+      <div style="width:100px; height:100px; background-color:#4a90e2; margin:auto;"></div>
+      <p>{{ .name }}</p>
+    </div>
+  {{ end }}
+</div>
+
+<h2>{{ $titleAlumni }}</h2>
+
+{{ range $year, $list := .Site.Data.members.alumni }}
+  <div class="accordion">
+
+    <button class="accordion-btn">
+      {{ $year }}
+    </button>
+
+    <div class="accordion-content">
+      <ul>
+        {{ range $list }}
+          <li>{{ .name }}</li>
+        {{ end }}
+      </ul>
+    </div>
+
+  </div>
+{{ end }}
