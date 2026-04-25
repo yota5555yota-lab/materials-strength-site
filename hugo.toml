@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://github.com/yota5555yota-lab/materials-strength-site/"
 languageCode = 'ja'
 title = 'My New Hugo Project'
 theme = "PaperMod"
