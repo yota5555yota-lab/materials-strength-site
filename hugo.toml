@@ -19,7 +19,7 @@ defaultContentLanguageInSubdir = false
 
     [[languages.ja.menu.main]]
     name = "研究内容"
-    url = "/research/"
+    url = "/public/research/"
     weight = 2
 
     [[languages.ja.menu.main]]
